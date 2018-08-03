@@ -141,6 +141,8 @@ define oracle_java::installation (
       }
       '8'     : {
         case $min_version {
+          '181'   : { $buildnumber   = '-b13'
+                      $urlcodeoracle = '/96a7b8442fe848ef90c96a2fad6ed6d1' }
           '172'   : { $buildnumber   = '-b11'
                       $urlcodeoracle = '/a58eab1ec242421181065cdc37240b08' }
           '171'   : { $buildnumber   = '-b11'
@@ -280,6 +282,15 @@ define oracle_java::installation (
         'jdk-9_linux-x64_bin.tar.gz'  : { $md5checksum = 'abe68b8ba280d11cb8f937410543750c' }
         'jre-9_linux-x64_bin.rpm'     : { $md5checksum = '3d0bd97925fa3d68746c2849c6aa1d2b' }
         'jre-9_linux-x64_bin.tar.gz'  : { $md5checksum = '113a784957235eb78ef418f89e3e6b88' }
+        # 8u181
+        'jdk-8u181-linux-i586.rpm'    : { $md5checksum = 'f41a0a336cd3dc30be4293970c4764f0' }
+        'jdk-8u181-linux-i586.tar.gz' : { $md5checksum = '765539c51490081b1eb27382dd7e96b3' }
+        'jdk-8u181-linux-x64.rpm'     : { $md5checksum = 'e7c0593a310b83b4ca69ea22f850c71f' }
+        'jdk-8u181-linux-x64.tar.gz'  : { $md5checksum = 'ef599e322eee42f6769991dd3e3b1a31' }
+        'jre-8u181-linux-i586.rpm'    : { $md5checksum = '342bcdd37ae9aa29831c96056643f5be' }
+        'jre-8u181-linux-i586.tar.gz' : { $md5checksum = '85b1b4fb8b9ec6c4f7d51f53c31b20e2' }
+        'jre-8u181-linux-x64.rpm'     : { $md5checksum = 'ab1e2110eb413c4cb10548c8a43d01f2' }
+        'jre-8u181-linux-x64.tar.gz'  : { $md5checksum = '7681dd61646361856b16141c59bebd51' }
         # 8u172
         'jdk-8u172-linux-i586.rpm'    : { $md5checksum = '345472922488290894a803f36fdeb2d1' }
         'jdk-8u172-linux-i586.tar.gz' : { $md5checksum = '0462f605ca1a558a0a95c52d46127071' }

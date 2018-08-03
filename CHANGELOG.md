@@ -1,3 +1,7 @@
+### 2.9.5
+
+Add support for Java '8u181' ([ajardan](https://github.com/ajardan))
+
 ### 2.9.4
 
 Add support for Java '8u171/8u172' ([mtron](https://github.com/mtron))

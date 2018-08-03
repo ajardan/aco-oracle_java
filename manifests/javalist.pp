@@ -21,6 +21,8 @@ class oracle_java::javalist {
     }
     '8'     : {
       case $oracle_java::min_version {
+        '181'   : { $buildnumber   = '-b13'
+                    $urlcodeoracle = '/96a7b8442fe848ef90c96a2fad6ed6d1' }
         '172'   : { $buildnumber   = '-b11'
                     $urlcodeoracle = '/a58eab1ec242421181065cdc37240b08' }
         '171'   : { $buildnumber   = '-b11'
